@@ -1,3 +1,5 @@
+"use strict";
+
 describe('foo-controller should control the scope of bar', function() {
   beforeEach(module('d2-starter'));
 
