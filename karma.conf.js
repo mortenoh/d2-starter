@@ -12,6 +12,10 @@ module.exports = function( config ) {
       'components/common/*.html'
     ],
 
+    preprocessors: {
+      'components/common/*.html': 'html2js'
+    },
+
     reporters: ['progress'],
     port: 9876,
     colors: true,
