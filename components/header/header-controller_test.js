@@ -5,8 +5,8 @@ describe("header-controller", function() {
 
   var scope, location, controller;
 
-  beforeEach(inject(function( $location, $controller ) {
-    scope = {};
+  beforeEach(inject(function( $location, $controller, $rootScope ) {
+    scope = $rootScope.$new();
     location = $location;
     controller = $controller;
   }));

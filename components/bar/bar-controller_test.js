@@ -5,9 +5,9 @@ describe('bar-controller should control the scope of bar', function() {
 
   var scope, controller;
 
-  beforeEach(inject(function( $controller ) {
+  beforeEach(inject(function( $controller, $rootScope ) {
+    scope = $rootScope.$new();
     controller = $controller;
-    scope = {};
   }));
 
   it('should set $scope.bar with data from foobar-service', inject(function( foobar ) {
